@@ -1,0 +1,49 @@
+.contact {
+  padding: 120px 10%;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.contact p {
+  color: #cbd5e1;
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+
+.email-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 16px 28px;
+
+  text-decoration: none;
+  color: white;
+
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  border-radius: 14px;
+
+  transition: all 0.3s ease;
+}
+
+.email-link:hover {
+  transform: translateY(-4px);
+  background: rgba(124, 58, 237, 0.2);
+  border-color: #7c3aed;
+}
+
+.email-link svg {
+  font-size: 1.3rem;
+}
+
+.contact-footer {
+  margin-top: 30px;
+  color: #94a3b8;
+}

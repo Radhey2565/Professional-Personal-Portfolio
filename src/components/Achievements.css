@@ -1,0 +1,35 @@
+.achievements {
+  padding: 100px 10%;
+}
+
+.achievements h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+}
+
+.achievement-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+.achievement-card {
+  display: block;
+  text-decoration: none;
+  color: white;
+
+  padding: 25px;
+  border-radius: 16px;
+
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+
+  transition: all 0.3s ease;
+}
+
+.achievement-card:hover {
+  transform: translateY(-6px);
+  border-color: #06b6d4;
+  box-shadow: 0 10px 30px rgba(6,182,212,.25);
+}

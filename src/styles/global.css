@@ -1,0 +1,58 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, sans-serif;
+  background: #05060a;
+  color: white;
+  overflow-x: hidden;
+}
+
+/* ELITE MOVING GRADIENT BACKGROUND */
+body::before {
+  content: "";
+  position: fixed;
+  width: 800px;
+  height: 800px;
+  background: radial-gradient(circle, rgba(124,58,237,0.25), transparent 60%);
+  top: -200px;
+  left: -200px;
+  filter: blur(80px);
+  animation: floatGlow 10s infinite alternate ease-in-out;
+  z-index: -1;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(6,182,212,0.18), transparent 60%);
+  bottom: -200px;
+  right: -200px;
+  filter: blur(80px);
+  animation: floatGlow2 12s infinite alternate ease-in-out;
+  z-index: -1;
+}
+
+@keyframes floatGlow {
+  from { transform: translate(0, 0); }
+  to { transform: translate(80px, 60px); }
+}
+
+@keyframes floatGlow2 {
+  from { transform: translate(0, 0); }
+  to { transform: translate(-80px, -60px); }
+}
+
+section {
+  padding: 100px 60px;
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 80px 20px;
+  }
+}
