@@ -1,4 +1,4 @@
-# 🚀 Radhey Mohan Singh - Personal Portfolio
+#  Radhey Mohan Singh - Personal Portfolio
 
 A modern, responsive, and professional AI/ML Engineer portfolio built using React, TypeScript, and Vite. The portfolio showcases my projects, skills, experience, achievements, certifications, and contact information with smooth animations and a premium UI.
 
@@ -7,7 +7,7 @@ https://personal-portfolio-omega-six-39.vercel.app/
 
 ---
 
-## 👨‍💻 About Me
+## About Me
 
 I am a passionate AI/ML Engineer and Full Stack Developer focused on building intelligent systems, scalable applications, and impactful software solutions.
 
@@ -22,9 +22,9 @@ My interests include:
 
 ---
 
-## ✨ Features
+## Features
 
-### 🎯 Modern UI/UX
+### Modern UI/UX
 - Glassmorphism Navbar
 - Smooth Scroll Navigation
 - Premium Gradient Backgrounds
@@ -32,27 +32,27 @@ My interests include:
 - Interactive Hover Effects
 - Animated Sections
 
-### 👤 Hero Section
+###  Hero Section
 - Professional Introduction
 - Resume Download Button
 - Animated AI Sphere
 - Social Links
 
-### 📖 About Section
+###  About Section
 - Professional Overview
 - Animated Cards
 - Statistics Showcase
 
-### 🛠 Skills Section
+###  Skills Section
 - Technology Icons
 - Hover Animations
 - Responsive Grid Layout
 
-### 💼 Experience Section
+###  Experience Section
 - Internship Timeline
 - Professional Experience Cards
 
-### 🚀 Projects Section
+###  Projects Section
 Includes projects such as:
 
 #### Accident Risk Prediction System
@@ -75,7 +75,7 @@ Each project includes:
 - Technology Stack
 - GitHub Repository Link
 
-### 🏆 Achievements Section
+###  Achievements Section
 - 150+ DSA Problems Solved
 - SOLVIT Hackathon Best Performer
 - Academic Achievement Award
@@ -87,7 +87,7 @@ Each project includes:
 ### 📜 Certifications
 Clickable certification cards redirect users to certificate links.
 
-### 📬 Contact Section
+###  Contact Section
 - Email Integration
 - One-click Email Composition
 - LinkedIn Profile
@@ -141,48 +141,4 @@ src/
 ├── App.tsx
 └── main.tsx
 
-
-## ⚙️ Installation
-
-Clone the repository:
-
-git clone https://github.com/Radhey2565/personal-portfolio.git
-
-Navigate into project:
-
-cd personal-portfolio
-
-Install dependencies:
-
-npm install
-
-Run development server:
-
-npm run dev
-
-Build for production:
-
-npm run build
-
-Preview production build:
-
-npm run preview
-📬 Contact
-Email
-
-radheymohan614@gmail.com
-
-LinkedIn
-
-https://www.linkedin.com/in/radhey-mohan-singh-4a3016266/
-
-GitHub
-
-https://github.com/Radhey2565
-
-© Copyright
-
-© 2026 Radhey Mohan Singh. All Rights Reserved.
-
-Built with ❤️ using React, TypeScript, Vite and Framer Motion.
 
