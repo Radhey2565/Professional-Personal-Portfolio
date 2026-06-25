@@ -3,14 +3,14 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 100px 80px;
+  padding: 80px 40px;
   background: linear-gradient(135deg, #07070a, #111827);
   color: white;
   overflow: hidden;
   position: relative;
 }
 
-/* Background glow layer */
+/* BACKGROUND */
 .hero-bg {
   position: absolute;
   inset: 0;
@@ -20,36 +20,111 @@
     radial-gradient(circle at bottom right, #06b6d4 0%, transparent 40%);
 }
 
-/* Left text */
-.hero-left {
-  max-width: 50%;
-  z-index: 1;
+/* MAIN GRID */
+.hero-grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1300px;
+  z-index: 2;
+  gap: 60px;
 }
 
-.hero-left h1 {
-  font-size: 3rem;
-  margin-bottom: 10px;
+/* LEFT CONTENT */
+.hero-content {
+  max-width: 600px;
+  text-align: left;
+  z-index: 2;
 }
 
-.hero-left p {
-  font-size: 1.2rem;
-  opacity: 0.8;
+/* BADGE */
+.badge {
+  padding: 12px 22px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  display: inline-block;
+}
+
+/* HEADINGS */
+.hero h1 {
+  font-size: 4.5rem;
+  margin-top: 25px;
+  color: white;
+}
+
+.hero h1 span {
+  color: #7c3aed;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  margin-top: 15px;
+  color: white;
+}
+
+.hero h2 span {
+  color: #06b6d4;
+}
+
+/* PARAGRAPH */
+.hero p {
+  margin-top: 25px;
+  color: #cbd5e1;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+/* BUTTONS */
+.hero-buttons {
+  margin-top: 40px;
+  display: flex;
+  gap: 20px;
+}
+
+.hero-buttons button {
+  padding: 15px 30px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* OUTLINE BUTTON */
+.outline {
+  background: transparent;
+  border: 1px solid white !important;
+  color: white;
+  transition: 0.3s;
+}
+
+.outline:hover {
+  background: white;
+  color: black;
+}
+
+/* RIGHT SIDE */
+.hero-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
 }
 
 /* MONITOR */
 .monitor {
   width: 520px;
-  height: 340px;
+  height: 320px;
   background: #111;
   border-radius: 18px;
   box-shadow: 0 25px 80px rgba(0, 255, 255, 0.15);
-  border: 2px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   overflow: hidden;
-  position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
-/* Top bar like macOS */
+/* TOP BAR */
 .monitor-top-bar {
   height: 35px;
   background: #0b0f19;
@@ -77,23 +152,24 @@
   background: #27c93f;
 }
 
-/* Screen */
+/* SCREEN */
 .screen {
   padding: 15px;
   height: calc(100% - 35px);
   background: #0d1117;
   overflow: hidden;
+  text-align: left;
 }
 
 .screen pre {
-  color: #58a6ff;
-  font-size: 14px;
-  line-height: 1.6;
   margin: 0;
+  font-size: 14px;
+  color: #58a6ff;
   font-family: "Fira Code", monospace;
+  line-height: 1.6;
 }
 
-/* blinking cursor */
+/* CURSOR */
 .cursor {
   animation: blink 1s infinite;
 }
@@ -101,5 +177,41 @@
 @keyframes blink {
   50% {
     opacity: 0;
+  }
+}
+
+/* SPHERE */
+.hero-sphere {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+.sphere {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: radial-gradient(circle, #7c3aed, #06b6d4);
+  box-shadow: 0 0 40px rgba(124, 58, 237, 0.6);
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .hero-grid {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-content {
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 3.5rem;
+  }
+
+  .monitor {
+    width: 100%;
+    max-width: 420px;
   }
 }
