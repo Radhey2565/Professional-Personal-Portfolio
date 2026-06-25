@@ -1,65 +1,90 @@
 .hero {
   min-height: 100vh;
-  position: relative;
   display: flex;
-  justify-content: center;
   align-items: center;
-  text-align: center;
+  justify-content: space-between;
+  padding: 100px 80px;
+  background: linear-gradient(135deg, #07070a, #111827);
+  color: white;
   overflow: hidden;
 }
 
-.hero-bg {
-  position: absolute;
-  inset: 0;
-
-  background:
-  radial-gradient(circle at top left,#c0d8e8 0%,transparent 40%),
-  radial-gradient(circle at bottom right,#06b6d4 0%,transparent 40%);
+/* Left text */
+.hero-left {
+  max-width: 50%;
 }
 
-.hero-content {
-  max-width: 900px;
-  z-index: 2;
+.hero-left h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
 }
 
-.badge {
-  padding: 12px 22px;
-  border-radius: 999px;
-
-  background: rgba(255,255,255,.08);
-}
-
-.hero h1 {
-  font-size: 5rem;
-  margin-top: 30px;
-}
-
-.hero h1 span {
-  color: #7c3aed;
-}
-
-.hero p {
-  margin-top: 25px;
-  color: #cbd5e1;
+.hero-left p {
   font-size: 1.2rem;
+  opacity: 0.8;
 }
 
-.hero-buttons {
-  margin-top: 40px;
+/* MONITOR */
+.monitor {
+  width: 520px;
+  height: 340px;
+  background: #111;
+  border-radius: 18px;
+  box-shadow: 0 25px 80px rgba(0, 255, 255, 0.15);
+  border: 2px solid rgba(255, 255, 255, 0.08);
+  overflow: hidden;
+  position: relative;
+}
+
+/* Top bar like macOS */
+.monitor-top-bar {
+  height: 35px;
+  background: #0b0f19;
   display: flex;
-  gap: 20px;
-  justify-content: center;
+  align-items: center;
+  padding: 0 12px;
+  gap: 8px;
 }
 
-.hero-buttons button {
-  padding: 15px 30px;
-  border-radius: 12px;
-  border: none;
-  cursor: pointer;
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
 }
 
-.outline {
-  background: transparent;
-  border: 1px solid white !important;
-  color: white;
+.red {
+  background: #ff5f56;
+}
+.yellow {
+  background: #ffbd2e;
+}
+.green {
+  background: #27c93f;
+}
+
+/* Screen */
+.screen {
+  padding: 15px;
+  height: calc(100% - 35px);
+  background: #0d1117;
+  overflow: hidden;
+}
+
+.screen pre {
+  color: #58a6ff;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
+  font-family: "Fira Code", monospace;
+}
+
+/* blinking cursor */
+.cursor {
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
 }
