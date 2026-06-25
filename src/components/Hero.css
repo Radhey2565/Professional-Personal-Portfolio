@@ -7,11 +7,23 @@
   background: linear-gradient(135deg, #07070a, #111827);
   color: white;
   overflow: hidden;
+  position: relative;
+}
+
+/* Background glow layer */
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background:
+    radial-gradient(circle at top left, #c0d8e8 0%, transparent 40%),
+    radial-gradient(circle at bottom right, #06b6d4 0%, transparent 40%);
 }
 
 /* Left text */
 .hero-left {
   max-width: 50%;
+  z-index: 1;
 }
 
 .hero-left h1 {
@@ -34,6 +46,7 @@
   border: 2px solid rgba(255, 255, 255, 0.08);
   overflow: hidden;
   position: relative;
+  z-index: 1;
 }
 
 /* Top bar like macOS */
@@ -55,9 +68,11 @@
 .red {
   background: #ff5f56;
 }
+
 .yellow {
   background: #ffbd2e;
 }
+
 .green {
   background: #27c93f;
 }
